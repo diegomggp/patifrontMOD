@@ -1,0 +1,108 @@
+.big-conteiner{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: #8D98A7;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+
+.title-history{
+    font: 2em sans-serif;
+    text-align: center;
+    font-weight: 600px;
+}
+
+.trip-title{
+    width: 194.4px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+}
+
+::placeholder{
+    color: black;
+}
+
+.super-title{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.icon-cross{
+    height: 40px;
+    margin-right: 50px;
+}
+
+.history-container{
+    border: solid;
+    border-color: rgb(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 30px;
+    align-items: baseline;
+    background-color: white;
+}
+
+.date{
+    margin-left: 35px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color:#F4BC68
+}
+
+.date2{
+    margin-left: 35px;
+    font-weight: bold;
+    color:#F4BC68
+}
+
+.history-input{
+    margin: 10px;
+    border-bottom: solid 1px;
+    border-color: #8D98A7;
+    padding: 3px;
+}
+
+.title-1{
+    text-align:left;
+font-weight: 800;
+
+}
+
+#email,
+#password{
+    padding: 5px;
+}
+
+.login-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    background-color: #F4BC68;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.click:after {
+    content:"En pantalla grande";
+}
+@media (max-width: 1024px) {
+    .click:after {
+        content:"Tablet";
+    }
+}
+@media (max-width: 480px) {
+    .click:after {
+        content:"Movil";
+    }
+}

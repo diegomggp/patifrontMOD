@@ -1,0 +1,182 @@
+.Register-div-Main {
+    background-color: #31B8B8;
+    width: 100vw;
+    width: 100svw;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.title-register {
+    display: flex;
+    flex-direction: column;
+    gap:1.6em;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-weight: 700;
+    margin-top: 25px;
+    color: #FCFAFA;
+    font-size: 1.8rem;
+    width: 100%
+}
+
+.register-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    background-color: #FCFAFA;
+    width: 100%;
+    padding: 2em;
+    border-radius: 40px 40px 0px 0px;
+    
+}
+
+.register-input {
+    width: 26em;
+    height: 40px;
+    border: 1px solid #8D98A7;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border-radius: 1.5em;
+    border: .08em solid #31B8B8;
+    padding: 1em;
+    transition: border .1s;
+    font-size: 0.8rem;
+}
+
+.register-input:focus-visible {
+    border: 0.15em solid #31B8B8;
+    outline: none;
+}
+
+.register-input::placeholder {
+    font-size: 0.8rem;
+    padding-left: 1em;
+    color: #31B8B8;
+    font-weight: 500;
+}
+
+.register-p {
+    margin-top: -1.3em;
+    color: #31B8B8;
+    font-size: 0.65em;
+    text-align: end;
+}
+.Register-logo {
+    font-family: 'League Gothic';
+    font-size: 4rem;
+}
+
+/* .register-register-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 28em;
+    height: 40px;
+    background-color: #31B8B8;
+    border-radius: 1.6em;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} */
+
+.register-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 26em;
+    height: 40px;
+    background-color: #31B8B8;
+    border-radius: 1.6em;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.big-register-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-div-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    align-items: center;
+    gap: .5em;
+}
+
+.register-div-footericons {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.register-icon {
+    color: #31B8B8;
+    font-size: 2em;
+
+
+}
+
+.box-register {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Register-div-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5em;
+    align-items: center;
+    gap: .5em;
+}
+.Register-p {
+    margin-top: -1.3em;
+    color: #31B8B8;
+    font-size: 0.65em;
+    text-align: end;
+}
+.Register-div-footericons {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.Register-icon {
+    color: #31B8B8;
+    font-size: 2em;
+
+
+}
+
+.link {
+    font-size: 12.5px;
+    font-weight: 500;
+}
+
+.reg {
+    font-weight: bold;
+}

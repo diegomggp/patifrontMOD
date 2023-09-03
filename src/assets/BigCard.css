@@ -1,0 +1,41 @@
+.big-details2{
+    display: flex;
+    background-color: white;
+    height: 40px;
+    width: 325px;
+    align-items: center;
+    border-radius: 10px;
+    /*margin-left: 25px;*/
+    margin-top: 30px;
+    border: solid;
+    border-color: rgb(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 10px rgb(167, 167, 167);
+
+}
+
+.detail-date2{
+    padding: 25px;
+    font-family: poppins;
+    color: #8D98A7;
+}
+
+.detail-price2{
+    padding: 25px;
+    font-family: poppins;
+    color: #8D98A7;
+}
+
+.detail-State2{
+    padding: 25px;
+    font-family: poppins;
+    color: white;
+    font-size:small;
+}
+
+.btn-bigcard{
+    border: solid;
+    padding: 3.5px;
+    border-radius: 10px;
+    background: red;
+    width: 70px;
+}

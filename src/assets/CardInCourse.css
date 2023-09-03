@@ -1,0 +1,47 @@
+.big-big-details3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+.big-details3{
+    display: flex;
+    background-color: white;
+    height: 40px;
+    width: 325px;
+    align-items: center;
+    border-radius: 10px;
+   /* margin-left: 25px;*/
+    margin-top: 30px;
+    border: solid;
+    border-color: rgb(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 10px rgb(167, 167, 167);
+}
+
+.detail-date3{
+    padding: 25px;
+    font-family: poppins;
+    color: #8D98A7;
+}
+
+.detail-price3{
+    padding: 25px;
+    font-family: poppins;
+    color: #8D98A7;
+}
+
+.detail-State3{
+    padding: 25px;
+    font-family: poppins;
+    color: white;
+    font-size:small;
+}
+
+.btn-bigcard2{
+    border: solid;
+    padding: 3.5px;
+    border-radius: 10px;
+    background: green;
+    width: 70px;
+
+}

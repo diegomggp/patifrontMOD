@@ -1,0 +1,153 @@
+.TripInterface-div{
+    position: absolute;
+    top: 0;
+    /* right:0; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* transform: translateX(80%); */
+    transition: all 1s ease;
+    width: 100%;
+    height: fit-content;
+    animation: puff-in 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715);
+    z-index: 5;
+}
+.TripInterface-div.isActive{
+    position: absolute;
+    top: 0;
+    transform: translateX(0%);
+    height: 100vh;
+    z-index:5;
+}
+
+.TripInterface-div--background.isActive{
+    position: absolute;
+    width:100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1;
+}
+.TripInterface-div--menu{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FCFAFA;
+    border-radius: 0px 0px 1.4em 1.4em;
+    height: fit-content;
+    width: 100%;
+    padding: 2.5em 2.5em 2.5em 2.5em;  
+    font-size: 1rem;
+    z-index: 999;
+}
+.TripInterface-div--menu > *:not(.TripInterface-div--logo) {
+    opacity: 0;
+    transition: opacity 1s;
+}
+.TripInterface-div--menu.isActive > *{
+    opacity: 1;
+}
+.TripInterface-div--logo{
+    position: absolute;
+    bottom: -4em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: fit-content;
+    border-radius: 50%;
+    /* margin: 0.5em; */
+    background-color: #FCFAFA;;
+}
+.TripInterface-img{
+    min-width: 65px;
+    width: 8vh;
+    max-width: 100px;
+}
+.TripInterface-div--info{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    /* margin-left: 15%; */
+    gap:1em;
+}
+.TripInterface-div--EndTrip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    gap:1em
+}
+.TripInterface-button{
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid #141204;
+    background-color: rgba(238, 36, 36, 0.736);
+    padding: 0.4em 1.2em;
+    box-shadow: 0 0 .5em black
+
+}
+@media (hover:hover) {
+    .TripInterface-button:hover{
+    background-color: rgba(238, 36, 36, 0.918);
+    }
+}
+.TripInterface-button:active{
+    background-color: rgba(238, 36, 36, 0.918);
+    box-shadow: 0 0 0.8em inset black
+
+}
+.TripInterface-h4{
+    padding: 0.2em;
+    border-radius: 5px;
+    background-color: #F4BC68;
+    font-size: 1rem;
+}
+.TripInterface-h5{
+    padding-top: 0.3em;
+    font-size: 0.8rem;
+}
+.TripInterface-h6{
+    color: red;
+    font-size: 0.6rem;
+}
+.TripInterface-div--time{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 4.5em;
+    height: 4.5em;    
+    background-color: #31B8B8;
+    padding: 2em;
+    margin: 0.2em;
+}
+.TripInterface-h5--time{
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+}
+@keyframes puff-in {
+    0% {
+        
+        -webkit-transform: scaleX(2);
+        transform: scaleX(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1) translateX(80%);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}

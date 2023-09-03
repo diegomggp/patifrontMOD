@@ -1,0 +1,239 @@
+.TripInterface-div{
+    position: absolute;
+    top: -12%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    transition: all 1s ease;
+    width: 100%;
+    height: fit-content;
+    animation: puff-in 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715);
+    z-index: 5;
+}
+.TripInterface-div.isActive{
+    position: absolute;
+    top: 0;
+    height: 100dvh;
+    z-index:5;
+}
+
+.TripInterface-div--background.isActive{
+    position: absolute;
+    width:100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1;
+}
+.TripInterface-div--menu{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+    background-color: #FCFAFA;
+    border-radius: 0px 0px 1.4em 1.4em;
+    height: fit-content;
+    width: 100%;
+    padding: 1.5em 2.5em 2.7em 2.5em;  
+    font-size: 1rem;
+    z-index: 999;
+}
+.TripInterface-div--menu > *:not(.TripInterface-div--logo) {
+    opacity: 0;
+    transition: opacity 1s;
+}
+.TripInterface-div--menu.isActive > *{
+    opacity: 1;
+}
+.TripInterface-div--logo{
+    position: absolute;
+    bottom: -2.4em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border-radius: 50%;
+    box-shadow: 0px 0.25em 0.25em rgba(0, 0, 0, 0.25);
+    background-color: #FCFAFA;;
+}
+/* .TripInterface-img{
+    min-width: 65px;
+    width: 8vh;
+    max-width: 100px;
+} */
+.TripInterface-div--info{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    gap:1em;
+}
+.TripInterface-div--EndTrip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    gap:1em
+}
+.TripInterface-div--footer{
+    position: absolute;
+    bottom: 1em;
+    display: flex;
+    gap: 1em;
+    z-index: 3;
+}
+.TripInterface-div--btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 0.6em 1em;
+    box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
+    color: #FCFAFA;
+    border-radius: 19px;
+    min-width: 10em;
+    
+}
+.TripInterface-div--btn.btn-finish{
+    background-color: #31B8B8;
+}
+.TripInterface-div--btn.btn-pause{
+    background-color: #FCFAFA;
+    color: #31B8B8;
+}
+.TripInterface-btn--icon{
+    font-size: 1.3em;
+    width: fit-content;
+}
+.TripInterface-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+/* @media (hover:hover) {
+    .TripInterface-button:hover{
+    background-color: rgba(238, 36, 36, 0.918);
+    }
+}
+.TripInterface-button:active{
+    background-color: rgba(238, 36, 36, 0.918);
+    box-shadow: 0 0 0.8em inset black
+
+} */
+.TripInterface-h4{
+    padding: 0.2em;
+    border-radius: 5px;
+    background-color: #F4BC68;
+    font-size: 1rem;
+}
+.TripInterface-h5{
+    padding-top: 0.3em;
+    font-size: 0.8rem;
+}
+/* .TripInterface-h6{
+    color: red;
+    font-size: 0.6rem;
+} */
+.TripInterface-div--time{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 4.7em;
+    height: 4.7em;    
+    background-color: #31B8B8;
+    padding: 2em;
+    margin: 0.25em;
+}
+.TripInterface-p--title{
+    color: #827979;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.TripInterface-h5--time{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.TripInterface-h5--time.inPause{
+    animation: flickerAnimation 1s infinite
+}
+
+.TripInterface-h5--scotterID {
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.1em 0.25em;
+    background-color: #FCFAFA;
+}
+
+.TripInterface-img-scooterID{
+    width: 1.8em;
+
+}
+.TripInterface-div--battery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3em;
+    gap: .2em;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 0.6em;
+    width: fit-content;
+}
+
+.TripInterface-icon {
+    font-size: 1.4rem;
+    width: fit-content;
+}
+
+.TripInterface-icon--bat {
+    font-size: 1.1rem;
+    width: fit-content;
+}
+
+.TripInterface-h5--battery {
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.1em 0.2em;
+    background-color: #FCFAFA;
+}
+@keyframes puff-in {
+    0% {
+        
+        -webkit-transform: scaleY(2);
+        transform: scaleY(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleX(Y) translateY(5%);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

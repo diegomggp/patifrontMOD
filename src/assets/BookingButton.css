@@ -1,0 +1,35 @@
+.BookingButton-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    min-width: 10em;
+    box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
+    border-radius: 1.2em;
+    background-color: #FCFAFA;
+    padding: 0.6em 1.2em;
+}
+.BookingButton-button{
+    min-width: 9em ;
+    color: #31B8B8;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.BookingButton-button:active {
+    box-shadow: 0 0 0.2em inset black
+}
+/* .BookingButton-button--cancel{
+    background-color: rgba(255, 0, 0, 0.633);
+}
+.isBlinking{    
+    animation: blink .75s linear infinite;
+}
+@keyframes blink {
+    0% { }
+    100% { background-color: rgba(163, 0, 0, 0.993) }
+} */
+.Bookingpp-h5--time{
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    font-weight: 600;
+}

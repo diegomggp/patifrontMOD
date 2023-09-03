@@ -1,0 +1,58 @@
+.big-history-details {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* align-items: stretch; */
+    align-content: center;
+    flex-wrap: wrap;    
+    height: 100vh;
+ 
+}
+
+.navbar-bear{
+    
+}
+
+.big-details {
+    display: flex;
+    background-color: #F4BC68;
+    height: 40px;
+    width: 325px;
+    align-items: center;
+    border-radius: 10px;
+    /*margin-left: 25px;*/
+    margin-top: 30px;
+    align-content: center;
+    justify-content: space-evenly;
+    font-size: small;
+}
+
+.title-history {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.big-big-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.detail-date {
+    padding: 25px;
+    font-family: poppins;
+    color: white;
+}
+
+.detail-price {
+    padding: 25px;
+    font-family: poppins;
+    color: white;
+}
+
+.detail-State {
+    padding: 25px;
+    font-family: poppins;
+    color: white;
+}

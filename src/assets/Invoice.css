@@ -1,0 +1,212 @@
+.Invoice-background{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.637);
+}
+
+
+
+.Invoice-div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #287272;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1.4em;
+    box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
+}
+.Invoice-div--header{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin: 1em;
+    padding: 0.8em;
+    border-radius: 1em;
+    background-color: aliceblue;
+    box-shadow: 0 0 3px #141204;
+}
+.Invoice-img{
+    width: 20%;
+    border-radius: 50%;
+    background-color: #f6cb8a;
+    box-shadow: 0 0 3px #141204;
+}
+.Invoice-div--body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    border-radius: 1em;
+
+}
+.Invoice-div--info{
+    min-width: 17em ;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.2em;
+    background-color: #FCFAFA;
+    border-radius: 0 0 20px 20px;
+    padding: 1em 1.7em;
+}
+.Invoice-div--head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2em;
+    gap: .5em;
+    align-items: center;
+    color: #FCFAFA;
+    font-size: 0.85rem;
+}
+.Invoice-div--column{
+    display: flex;
+    flex-direction: column;
+    gap: 0.15em;
+}
+.Invoice-div--column.column2{
+    display: flex;
+    align-items: flex-end;
+}
+.Invoice-h2{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.Invoice-h3{ 
+    font-size: 1rem;
+    font-weight: 500;
+}
+.Invoice-h4{
+    color: #287272;
+    font-size: 0.85rem;
+}
+.Invoice-h4.head{
+    color: #FCFAFA;
+    font-weight: 700;
+}
+
+.Invoice-h5{
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #287272;
+}
+.Total{
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: .1em;
+}
+.Invoice-h5.head{
+    font-size: 0.8rem;
+    font-weight: 400;
+    background-color: #E6E4E0;
+    border-radius: 1.2rem;
+    padding: 0.4em 0.8em;
+
+}
+.Invoice-div--footer{
+    margin-top: 10%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: center;
+}
+.Invoice-button{
+    position: absolute;
+    top:0;
+    right: 0;
+    border-radius: .3em;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .8em;
+}
+.InvoiceMain-div{
+    position: absolute;
+    top: 0;
+    width:100vw;
+    height:100vh;
+    background-color: #FCFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    z-index: 9;
+}
+.InvoiceMain-div--body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 5em;
+}
+.InvoiceMain-h5{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.InvoiceMain-img{
+    width: 4.8em;
+}
+.InvoiceMain-img2{
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    width: 10em;
+    z-index: 1;
+}
+
+.InvoiceMain-div--foot{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 5em;
+}
+.InvoiceMain-svg{
+    position: relative;
+    color: #31B8B8;
+    width: 100vw;
+    scale: 2;
+}
+.InvoiceMain-div--button{
+    position: absolute;
+    bottom: -2.5em;
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.65em 1.25em;
+    box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
+    color: #31B8B8;
+    background-color: #FCFAFA;
+    border-radius: 19px;
+    min-width: 12em;
+    width: fit-content;
+}
+@media screen and (min-width: 850px ) {
+    .InvoiceMain-div--foot{
+        bottom: 0;
+    }
+    .InvoiceMain-svg{
+        scale:1;
+    }
+    .InvoiceMain-div--button{
+        bottom: 2em;
+    }
+}
